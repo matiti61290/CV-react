@@ -6,7 +6,7 @@ function Header() {
     return (
         <Navbar expand="lg" bg="headerBackground" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand className="text-start h1"><strong>John Doe</strong></Navbar.Brand>
+                <Navbar.Brand className="text-start"><strong style={{fontSize: "1.5em"}}>John Doe</strong></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav" >
                     <Nav>
