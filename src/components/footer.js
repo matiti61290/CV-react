@@ -1,10 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import "../index.css" 
 
 function Footer() {
     return(
         <div className="container">
-            <div className="row">
+            <div className="row py-5" style={{backgroundColor: "#EEE"}}>
                 <div className="col-12 col-sm-6 col-md-3">
                     <strong>John Doe</strong>
                     <address>
@@ -33,6 +34,9 @@ function Footer() {
                     <Link to="" className="text-decoration-none">Vendre ses produits sur le web</Link>
                     <Link to="" className="text-decoration-none">Se positionner sur Google</Link>
                 </div>
+            </div>
+            <div className="row" style={{backgroundColor: "#1e1e1e "}}>
+                <p className="text-white text-center my-auto py-2" >&copy; Designed by John Doe</p>
             </div>
         </div>
     )
