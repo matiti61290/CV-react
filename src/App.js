@@ -1,4 +1,5 @@
 import Header from "./components/Header.js"
+import Footer from "./components/footer.js"
 import {Routes, Route} from "react-router-dom"
 import Home from "./pages/Home.js"
 import Blog from "./pages/Blog.js"
@@ -17,7 +18,9 @@ function App() {
           <Route path="/realisations" element={<Realisation />}/>
           <Route path="/blog" element={<Blog />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/legalnotice" element={<LegalNotice />} />
         </Routes>
+      <Footer />
     </div>
   );
 }
