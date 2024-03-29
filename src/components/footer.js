@@ -16,7 +16,7 @@ function Footer() {
                             Telephone: 06 20 30 40 50
                         </address>
                         <div className="d-flex flex-row mb-1 gap-3">
-                        <FontAwesomeIcon icon={faGithubSquare} size="2xl"/>
+                            <FontAwesomeIcon icon={faGithubSquare} size="2xl"/>
                             <FontAwesomeIcon icon={faTwitterSquare} size="2xl"/>
                             <FontAwesomeIcon icon={faLinkedin} size="2xl"/>
                         </div>

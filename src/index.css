@@ -4,6 +4,51 @@
     font-family: "Nunito Sans";
 }
 
+.bg-home {
+    background-image: url("./style/img/hero-bg-mobile.jpg");
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-size: 230%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+@media screen and (min-width: 576px) {
+    .bg-home{
+        background-image: url("./style/img/hero-bg-tablette.jpg");
+        background-color:rgba(0, 0, 0, 0.3);
+        background-blend-mode: multiply;
+        background-position-x: 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+    .bg-home{
+        background-image: url("./style/img/hero-bg.jpg");
+        background-color:rgba(0, 0, 0, 0.3);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+}
+
+.image-container{
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.my-photo{
+    width: 100%;
+}
+
 .bg-headerBackground{
     background-color: #1e1e1e ;
+    
 };
+
+

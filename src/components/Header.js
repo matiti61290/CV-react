@@ -4,7 +4,7 @@ import "../index.css"
 
 function Header() {
     return (
-        <Navbar expand="md" bg="headerBackground" data-bs-theme="dark">
+        <Navbar expand="lg" bg="headerBackground" data-bs-theme="dark">
             <Container>
                 <Navbar.Brand className="text-start"><strong style={{fontSize: "1.5em"}}>John Doe</strong></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
