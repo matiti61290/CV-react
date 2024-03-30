@@ -4,14 +4,26 @@
     font-family: "Nunito Sans";
 }
 
+.background{
+    margin-bottom: 25%;
+}
+
 .bg-home {
     background-image: url("./style/img/hero-bg-mobile.jpg");
     background-color:rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
-    background-size: 230%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 95vh;
+}
+
+.home-title{
+    font-size: 3.3em;
+}
+
+.home-work{
+    font-size: 1.75em;
 }
 
 @media screen and (min-width: 576px) {
@@ -35,11 +47,6 @@
         background-repeat: no-repeat;
         height: 50vh;
     }
-}
-
-.image-container{
-    max-height: 80%;
-    overflow: hidden;
 }
 
 .my-photo{
