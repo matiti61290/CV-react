@@ -4,6 +4,10 @@
     font-family: "Nunito Sans";
 }
 
+.nav-link.active{
+    color: white!important;
+}
+
 .background{
     margin-bottom: 25%;
 }
