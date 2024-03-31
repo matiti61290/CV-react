@@ -22,7 +22,7 @@ function Home() {
                 <h2 className="home-work text-white fw-semibold">Developpeur web full stack</h2>
                 <button  onClick={scrollToAnchor} className="btn bg-button text-white" >En savoir plus</button>
             </div>
-            <div className="background pt-5 bg-all">
+            <div className="home-background pt-5 mx-sm-5 bg-all">
                 <div className="container-fluid py-3 rounded bg-white shadow" ref={aboutMe}>
                     <div className="row px-5 my-5">
                         <div className="col-12 col-sm-6">
@@ -30,7 +30,7 @@ function Home() {
                                 A propos
                             </div>
                             <p className="fw-normal">
-                                Passionne par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>integrateur-developpeur web</strong>
+                                Passionne par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>integrateur-developpeur web </strong> 
                                 au CEF. Au cours de cette formation, j'ai pu acquerir des bases solides pour travailler dans le domaine du <strong>developpement web</strong>.
                             </p>
                             <p className="fw-normal">
@@ -42,7 +42,7 @@ function Home() {
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className="container">
-                                <img src={myPhoto} alt="Me" className="my-photo rounded" />
+                                <img src={myPhoto} alt="John Doe" className="my-photo rounded" />
                             </div>
                             <div className="container mt-2 d-flex flex-column gap-3">
                                 <h2 className="fw-semibold">Mes competences</h2>

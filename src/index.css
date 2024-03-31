@@ -8,7 +8,7 @@
     color: white!important;
 }
 
-.background{
+.home-background{
     margin-bottom: 25%;
 }
 
@@ -31,6 +31,9 @@
 }
 
 @media screen and (min-width: 576px) {
+    .home-background{
+        margin-bottom: 10%;
+    }
     .bg-home{
         background-image: url("./style/img/hero-bg-tablette.jpg");
         background-color:rgba(0, 0, 0, 0.3);
