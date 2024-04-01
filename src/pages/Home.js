@@ -1,4 +1,4 @@
-import React, { useRef} from "react";
+import React, { useRef } from "react";
 import "../index.css"
 import myPhoto from "../style/img/john-doe-about.jpg"
 
