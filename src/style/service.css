@@ -2,6 +2,11 @@
     font-size: 2.5em;
 }
 
+.service-offer-text{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .horizontal-bar{
     opacity: 1;
 }
@@ -12,5 +17,5 @@
 }
 
 .row{
-    margin-bottom: 40%;
+    margin-bottom: 15%;
 }
