@@ -1,6 +1,14 @@
+import React from "react"
+import Banner from "../components/banner"
+
+
+
 function ServicePage() {
     return (
-        <p>Hello</p>
+        <div>
+            <Banner />
+            <p>fddf</p>
+        </div>
     )
 }
 
