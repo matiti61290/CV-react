@@ -17,7 +17,7 @@ function Header(props) {
                         <Nav.Link href="/service">Service</Nav.Link>
                         <Nav.Link href="/realisations">Realisations</Nav.Link>
                         <Nav.Link href='/blog'>Blog</Nav.Link>
-                        <Nav.Link>Contact</Nav.Link>
+                        <Nav.Link href='/contact'>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
