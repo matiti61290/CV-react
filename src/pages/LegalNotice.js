@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import "bootstrap/js/src/collapse.js"
 import PageTitle from "../components/PageTitle";
@@ -8,11 +8,24 @@ import "../style.scss"
 import "../style/legalNotice.css"
 
 const LegalNotice = () => {
+    const shouldBlockIndexing = true
+
+    const [user, setUser] = useState([])
+    const getUsers = async() => {
+        const res = await fetch("https://api.github.com/users/github-john-doe")
+        const json = await res.json()
+        setUser(json)
+    }
+
+    useEffect(()=>{
+        getUsers()
+    },
+    [])
+
     return(
         <div>
-            <head>
-                <meta name="robots" content="noindex" />
-            </head>
+            {shouldBlockIndexing && (<meta name="robots" content="noindex"/>)}
+            {
             <div>
                 <PageTitle
                 title="MENTION LEGALES"
@@ -27,7 +40,7 @@ const LegalNotice = () => {
                             </h2>
                             <div id="collapseEditor" className="accordion-collapse collapse show" data-bs-parent="#accordionLegalMention">
                                 <div className="accordion-body">
-                                    <h3>John Doe</h3>
+                                    <h3>{user.name}</h3>
                                     <address>
                                         <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2"/> 40 rue Laure Diebold <br />
                                         69009 Lyon, France <br />
@@ -44,7 +57,7 @@ const LegalNotice = () => {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHost" aria-expanded="false" aria-controls="collapseHost">
-                                    Herbergeur
+                                    Hébergeur
                                 </button>
                             </h2>
                             <div id="collapseHost" className="accordion-collapse collapse" data-bs-parent="#accordionLegalMention">
@@ -61,13 +74,13 @@ const LegalNotice = () => {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCredit" aria-expanded="false" aria-controls="collapseCredit">
-                                    Credits
+                                    Crédits
                                 </button>
                             </h2>
                             <div id="collapseCredit" className="accordion-collapse collapse" data-bs-parent="#accordionLegalMention">
                                 <div className="accordion-body">
-                                    <h3>Credits</h3>
-                                    <p>Site developpe par Mathieu Barbey, etudiant du CEF.</p>
+                                    <h3>Crédits</h3>
+                                    <p>Site developpé par Mathieu Barbey, étudiant du CEF.</p>
                                     <p>Les images libres de droit sont issues du site <Link to={{pathname: "https://pixabay.com/fr/"}} target="_blank" className="text-decoration-none">pixabay</Link></p>
                                 </div>
                             </div>
@@ -75,6 +88,7 @@ const LegalNotice = () => {
                     </div>
                 </div>
             </div>
+        }
         </div>
     )
 }

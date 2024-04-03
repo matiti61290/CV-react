@@ -11,8 +11,5 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors , $custom-colors );
 
-// legalNotice
-$accordion-icon-active-color: red;
-
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

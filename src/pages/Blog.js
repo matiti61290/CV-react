@@ -19,7 +19,7 @@ const Blog = () =>{
             description="Retrouvez ici quelques articles sur le developpement web." 
             />
             <div className="container-fluid px-sm-4">
-                <div className="row">
+                <div className="row mx-3 mb-5">
                     <div className="col-12 col-sm-6 col-lg-4 mb-4">
                         <div>
                             <Card
