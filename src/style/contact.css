@@ -11,6 +11,10 @@
     height: 45vh;
 }
 
+.message{
+    height: 20vh;
+}
+
 @media screen and (min-width: 576px) {
     .map{
         min-height: max-content;

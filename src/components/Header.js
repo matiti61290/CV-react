@@ -20,15 +20,15 @@ function Header(props) {
     return (
         <Navbar activeKey={location.pathname} expand="lg" bg="headerBackground" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand className="text-start"><strong style={{fontSize: "1.5em"}}>{user.name}</strong></Navbar.Brand>
+                <Navbar.Brand href="/" className="text-start"><strong style={{fontSize: "1.5em"}}>{user.name}</strong></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav" >
                     <Nav activeKey={location.pathname}>
-                        <Nav.Link href="/">Accueil</Nav.Link>
-                        <Nav.Link href="/service">Service</Nav.Link>
-                        <Nav.Link href="/realisations">Realisations</Nav.Link>
-                        <Nav.Link href='/blog'>Blog</Nav.Link>
-                        <Nav.Link href='/contact'>Contact</Nav.Link>
+                        <Nav.Link href="/" className="text-uppercase">Accueil</Nav.Link>
+                        <Nav.Link href="/service" className="text-uppercase">Service</Nav.Link>
+                        <Nav.Link href="/realisations" className="text-uppercase">Realisations</Nav.Link>
+                        <Nav.Link href='/blog' className="text-uppercase">Blog</Nav.Link>
+                        <Nav.Link href='/contact' className="text-uppercase">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

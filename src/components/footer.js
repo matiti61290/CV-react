@@ -7,6 +7,8 @@ import "../style/footer.css"
 
 
 function Footer() {
+    const twitter = 'https://twitter.com/Mathieu61290'
+    const linkedin = 'https://www.linkedin.com/in/mathieu-barbey-bb0559228/' 
     const [user, setUser] = useState([])
     const getUsers = async() => {
         const res = await fetch("https://api.github.com/users/github-john-doe")
@@ -31,8 +33,8 @@ function Footer() {
                     </address>
                     <div className="d-flex flex-row mb-1 gap-3">
                         <a href="{user.html_url}" target="_blank"><FontAwesomeIcon icon={faGithubSquare} size="2xl" className="text-dark"/></a>
-                        <FontAwesomeIcon icon={faTwitterSquare} size="2xl"/>
-                        <FontAwesomeIcon icon={faLinkedin} size="2xl"/>
+                        <a href={twitter}><FontAwesomeIcon icon={faTwitterSquare} size="2xl" className="text-dark" /></a>
+                        <a href={linkedin}><FontAwesomeIcon icon={faLinkedin} size="2xl" className="text-dark" /></a>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-md-3 d-flex flex-column mb-3 ps-md-5">
@@ -58,7 +60,7 @@ function Footer() {
                 
             </div>
             <div className="row mb-0" >
-                <p onClick={() => window.scrollTo({top:0, behavior:'smooth'})} className="copyright-area py-1 text-white text-center" style={{width: '100%'}}>&copy; Designed by {user.name}</p>
+                <p onClick={() => window.scrollTo({top:0, behavior:'smooth'})} className="copyright-area py-3 text-white text-center" style={{width: '100%'}}>&copy; Designed by {user.name}</p>
             </div>
         </div>
     )

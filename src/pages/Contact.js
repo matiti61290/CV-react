@@ -41,7 +41,7 @@ const Contact = () => {
                                 </form>
                             </div>
                             <div className="col-12 col-sm-6">
-                                <h1 className="fw-semibold mt-3 mt-sm-0">Mes coordonnees</h1>
+                                <h1 className="fw-semibold mt-3 mt-sm-0">Mes coordonnées</h1>
                                 <hr className="horizontal-bar border-button border-2 mb-5" style={{width: '100%'}} />
                                 <div className="d-flex flex-column mb-5">
                                     <address>
