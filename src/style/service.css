@@ -19,3 +19,7 @@
 .row{
     margin-bottom: 15%;
 }
+
+.service:hover .icon-service{
+    color: #cde1f8;
+}

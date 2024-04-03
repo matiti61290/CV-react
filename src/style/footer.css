@@ -1,0 +1,10 @@
+.copyright-area{
+    background-color: #1e1e1e;
+    transition: 0.5s;
+}
+
+.copyright-area:hover{
+    background-color: #298eff;
+    cursor: pointer;
+    transition: 0.5s;
+}

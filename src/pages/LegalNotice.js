@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import "bootstrap/js/src/collapse.js"
 import PageTitle from "../components/PageTitle";
@@ -8,6 +8,18 @@ import "../style.scss"
 import "../style/legalNotice.css"
 
 const LegalNotice = () => {
+    const [user, setUser] = useState([])
+    const getUsers = async() => {
+        const res = await fetch("https://api.github.com/users/github-john-doe")
+        const json = await res.json()
+        setUser(json)
+    }
+
+    useEffect(()=>{
+        getUsers()
+    },
+    [])
+
     return(
         <div>
             <head>
@@ -27,7 +39,7 @@ const LegalNotice = () => {
                             </h2>
                             <div id="collapseEditor" className="accordion-collapse collapse show" data-bs-parent="#accordionLegalMention">
                                 <div className="accordion-body">
-                                    <h3>John Doe</h3>
+                                    <h3>{user.name}</h3>
                                     <address>
                                         <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2"/> 40 rue Laure Diebold <br />
                                         69009 Lyon, France <br />
