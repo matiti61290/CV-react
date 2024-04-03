@@ -3,11 +3,13 @@ import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import "../style/footer.css"
+
 
 function Footer() {
     return(
-        <div className="container-fluid">
-            <div className="row pt-5 bg-footer" >
+        <div className="container-fluid bg-footer">
+            <div className="footer row pt-5 mb-2" >
                 <div className="col-12 col-sm-6 col-md-3 ps-sm-5">
                     <strong>John Doe</strong>
                     <address className="mt-2">
@@ -41,11 +43,10 @@ function Footer() {
                     <Link to="" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Vendre ses produits sur le web</Link>
                     <Link to="" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Se positionner sur Google</Link>
                 </div>
+                
             </div>
-            <div className="row" style={{backgroundColor: "#1e1e1e "}}>
-                <div>
-                    <p onClick={() => window.scrollTo({top:0, behavior:'smooth'})} className="text-white text-center my-auto py-2" >&copy; Designed by John Doe</p>
-                </div>
+            <div className="copyright row mb-0" >
+                <p onClick={() => window.scrollTo({top:0, behavior:'smooth'})} className="bg-title text-white text-center" style={{width: '100%'}}>&copy; Designed by John Doe</p>
             </div>
         </div>
     )
