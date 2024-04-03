@@ -26,7 +26,7 @@ function Footer() {
                         <Link to="/" className="text-decoration-none text-dark mt-2"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Accueil</Link>
                         <Link to="" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />A propos</Link>
                         <Link to="/service" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Services</Link>
-                        <Link tp="/contact" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Me contacter</Link>
+                        <Link to="/contact" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Me contacter</Link>
                         <Link to="/legalnotice" className="text-decoration-none text-dark"><FontAwesomeIcon icon={faChevronRight} style={{color: "#09aafb",}} className="me-1" />Mentions legales</Link>
                     </div>
                     <div className="col-12 col-sm-6 col-md-3 d-flex flex-column mb-3 ps-sm-5 ps-md-0">

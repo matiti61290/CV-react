@@ -1,6 +1,7 @@
 import Header from "./components/Header.js"
 import Footer from "./components/footer.js"
 import {Routes, Route} from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.css';
 import Home from "./pages/Home.js"
 import Blog from "./pages/Blog.js"
 import Contact from "./pages/Contact.js"
