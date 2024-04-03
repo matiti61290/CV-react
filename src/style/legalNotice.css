@@ -1,0 +1,7 @@
+.accordion-button:not(.collapsed) {
+    color: blue;
+}
+
+.accordion-button:not(.collapsed)::after{
+    --bs-accordion-btn-active-icon:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='blue' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+}
